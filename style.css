@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.heading h1 {
+    padding-right: 10px;
+    cursor: pointer;
+}
+.heading h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+
+.menu-icon {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: none;
+}
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.side-navbar .side-popup {
+    border: 3px solid aqua;
+    border-right: none;
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    border-radius: 0 0 0 30px;
+    position: fixed;
+    display: none;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.side-navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar ul li {
+    padding-top: 20px;
+}
+
+.side-navbar ul li a:hover {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(15, 14, 15);
+    transition: 2s;
+}
+
+.Details {
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    padding-top: 30px;
+}
+
+.img-container img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 15px aqua,
+        2px 2px 15px aqua;
+}
+
+.img-container img:hover {
+    box-shadow: -5px -5px 20px aqua,
+        5px 5px 20px aqua;
+}
+
+.contact-btn {
+    color: black;
+    background-color: aqua;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    box-shadow: 2px 2px 16px aqua;
+    cursor: pointer;
+}
+
+.social-media {
+    color: aqua;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media i {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid aqua;
+    padding: 15px;
+    transition: 1s;
+}
+
+.social-media i:hover {
+    transform: translateY(-20px);
+}
+
+#section2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(15, 14, 15);
+    height: 100vh;
+    align-items: center;
+    transition: 2s;
+}
+
+.content {
+    width: 50%;
+    margin-left: 80px;
+}
+
+.myimg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.myimg img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 15px aqua,
+        2px 2px 15px aqua;
+}
+
+#section2 .content h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#section2 .content h1 span {
+    color: aqua;
+    filter: drop-shadow(30px 10px 4px #286b86);
+    background-color: transparent;
+    border: none;
+}
+
+#section2 .content .about {
+    color: aqua;
+    width: 100%;
+    height: 30px;
+    animation: about 5s infinite;
+}
+
+@keyframes about {
+    0% {
+        width: 10%;
+        overflow: hidden;
+    }
+
+    20% {
+        width: 20%;
+        overflow: hidden;
+    }
+
+    40% {
+        width: 40%;
+        overflow: hidden;
+    }
+
+    60% {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    80% {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    100% {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+#section2 .content p {
+    color: white;
+    margin-top: 15px;
+
+}
+
+.readmore {
+    color: black;
+    background-color: aqua;
+    padding: 14px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.readmore:hover {
+    box-shadow: 2px 2px 16px aqua;
+    cursor: pointer;
+}
+
+#section3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 14, 15);
+}
+
+#section3 h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.edu-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.edu-container div {
+    border: none;
+    cursor: pointer;
+    background-color: aqua;
+    width: 300px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#section4 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 14, 15);
+}
+
+#section4 h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#section4 .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+}
+
+#section4 .form input {
+    width: 500px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid aqua;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#section4 .form input::placeholder {
+    color: white;
+}
+
+#section4 .form textarea::placeholder {
+    color: white;
+}
+
+#section4 .form textarea {
+    width: 500px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid aqua;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#send-btn {
+    color: black;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#send-btn:hover {
+    box-shadow: 2px 2px 16px aqua;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-menu{
+    width: 100%;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-menu ul a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+.footer-menu ul a:hover{
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+footer p{
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width:650px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #section2 .content {
+        width: 70%;
+    }
+
+    #section2 .content .about h2 {
+        width: 50%;
+        height: 50px;
+    }
+    #section4 .form input{
+        width: 400px;
+        padding: 10px;
+    }
+    #section4 .form textarea{
+        width: 400px;
+        height: 200px;
+    }
+    .form {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
